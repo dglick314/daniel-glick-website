@@ -1,66 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
-    <style>
-        /* Add your custom CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #35424a;
-            color: #ffffff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .menu {
-            display: flex;
-            justify-content: center;
-            margin: 2rem 0;
-        }
-        .menu a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #35424a;
-            font-weight: bold;
-        }
-        .content {
-            border: 1px solid #ddd;
-            margin: 1rem 0;
-            padding: 1rem;
-        }
-        .content h2 {
-            margin-top: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <h1>Daniel Glick</h1>
-        <p>Jack of Most Trades</p>
+        <p>IT Consultant</p>
     </header>
     <div class="container">
-        <div class="menu">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="daniel-glick-resume.pdf" target="_blank">Resume</a>
-        </div>
+        <nav class="menu" aria-label="Primary navigation">
+            <button class="menu__toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="menu__icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Toggle navigation</span>
+            </button>
+            <div class="menu__links" id="primary-navigation">
+                <a class="menu__link" href="#about">About</a>
+                <a class="menu__link" href="#projects">Projects</a>
+                <a class="menu__link" href="#contact">Contact</a>
+                <a class="menu__link" href="daniel-glick-resume.pdf" target="_blank">Resume</a>
+            </div>
+        </nav>
         <div class="content" id="about">
             <h2>About Me</h2>
             <p>
-                Raised in the impoverished central valley, I found creativity and innovation required for survival. The right tool for the job was just a luxury in my eyes, where becoming versatile was necessary. Throughout my highschool years, I built robots with little more than a tool bag worth of tools, hand tools, and the humble power drill. Moving forward into university, with more access to tools, I’ve learned how to fabricate at a professional level, now turning my focus to improving the software side of robotics, a section that I unfortunately neglected due to lack of access to a powerful computer.
+                Temp
             </p>
         </div>
         
@@ -82,5 +49,6 @@
             <p>You can reach me at: your@email.com</p>
         </div>
     </div>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
